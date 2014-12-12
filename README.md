@@ -10,27 +10,30 @@ exclusivamente para grabar el escritorio de trabajo, se ha seleccionado este por
 buenos resultados. No esta disponible en los repositorios por defecto, por lo que es necesario
 agregar un nuevo repositorio:
 
->   [usuario@linux]$ sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
->   [usuario@linux]$ sudo apt-get update
->   [usuario@linux]$ sudo apt-get install simplescreenrecorder ubuntu-restricted-extras
->   [usuario@linux]$ simplescreenrecorder
-
+```bash
+[usuario@linux]$ sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
+[usuario@linux]$ sudo apt-get update
+[usuario@linux]$ sudo apt-get install simplescreenrecorder ubuntu-restricted-extras
+[usuario@linux]$ simplescreenrecorder
+```
 2. **Mplayer**. Me permite mostrar en los videotutoriales una pequeña ventana (sin barras de título,
 menús, etc.) con la imagen capturada por la Webcam. De esta forma, al mismo tiempo que se ve
 como realizar la práctica, se me muestra a mí mientras lo explico. Esta disponible en los
 repositorios por defecto.
 
->   [usuario@linux]$ sudo apt-get install mplayer
->   [usuario@linux]$ mplayer -noborder -quiet -ontop -fps 15 -geometry 200x150+1110+560
-noaudio tv://
+```bash
+[usuario@linux]$ sudo apt-get install mplayer
+[usuario@linux]$ mplayer -noborder -quiet -ontop -fps 15 -geometry 200x150+1110+560
+```
 
 3. **OpenShot**. Me permite editar los vídeos resultantes. Es decir, dispone de varias pistas o capas,
 en las cuales pudemos ir añadiendo vídeos, música o imágenes que irán componiendo el vídeo
 resultante. Esta disponible en los repositorios por defecto.
 
->   [usuario@linux]$ sudo apt-get install openshot
->   [usuario@linux]$ openshot
-
+```bash
+[usuario@linux]$ sudo apt-get install openshot
+[usuario@linux]$ openshot
+```
 
 
 
