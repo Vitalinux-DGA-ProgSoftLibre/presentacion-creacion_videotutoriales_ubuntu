@@ -1,4 +1,4 @@
-programa-creacion_videotutoriales_ubuntu
+presentacion-creacion_videotutoriales_ubuntu
 ========================================
 Presentación basada en reveal.js que explica brevemente como hacer un videotutorial a través de herramientas de Ubuntu.  Al mismo tiempo, esta presentación será utilizada por la comunidad Vitalinux para crear un videotutorial que explique como crear videotutoriales, de tal forma que toda la comunidad pueda contribuir en la creación de videotutoriales explicativos del software que incluye el proyecto Migasfree+Vitalinux.
 
