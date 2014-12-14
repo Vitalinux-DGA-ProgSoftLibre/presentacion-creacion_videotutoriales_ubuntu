@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Prog. Software Libre</title>
+
+		<meta name="description" content="Programade Software Libre">
+		<meta name="author" content="Arturo Mart&iacute;n Romero">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <style>
+            body {cursor:url(./img/flecha-rosa-digital.ani), url(./img/flecha-rosa-digital.gif), auto;}
+        </style>
+        
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+        
+        <script src="./js/js-global/zoom.js"></script>
+        <script src="./js/js-global/FancyZoom.js" type="text/javascript"></script>
+        <script src="./js/js-global/FancyZoomHTML.js" type="text/javascript"></script>
+        
+	</head>
+
+	<body onload="setupZoom()">
+<!--Comienzo de la Presentación-->
+	<div class="reveal">
+        <!--Inicio de las "diapositivas" de la presentaci&oacute;n -->
+	<div class="slides">
+<!--primera diapositiva-->
+    <section id="inicio">
+		<h3>VITALINUX &amp; MIGASFREE </h3>
+        <h2>Creaci&oacute;n de Videotutoriales en Vitalinux/Ubuntu</h2>
+		<h4>Programa de Software Libre - Dept. Educación</h4>
+					<p>
+						<small>Coordinado por: <a href="http://amromero.no-ip.org">Arturo Martín Romero</a> / <a href="mailto://amartinromero@gmail.com">amartinromero@gmail.com</a></small>
+					</p>
+        
+        <p style="text-align: center;"><img src="./img/logo.png" height="80"></p>
+        <p><small>
+            Si lo deseas cambia el Tipo de Transici&oacute;n y/o Plantilla: <br>
+            <a href="?#/inicio">Default</a> -
+            <a href="?transition=none#/inicio">None</a> -
+            <a href="?theme=simple#/inicio">Simple</a> -
+            <a href="?transition=fade&theme=beige#/inicio">Fade y Beige</a> -
+            <a href="?transition=slide&theme=serif#/inicio">Slide y Serif</a> -
+            <a href="?transition=concave&theme=beige#/inicio">Concave y Beige</a> -
+            <a href="?transition=zoom&theme=serif#/inicio">Zoom y Serif</a> - 
+            <a href="?transition=zoom&theme=night#/inicio">Zoom y Night</a> - 
+            <a href="?theme=solarized#/inicio">Solarized</a> -
+            <a href="?transition=fade&theme=sky#/inicio">Fade y Sky</a> -
+            <a href="?theme=serif#/inicio">Serif</a> -
+            <a href="?theme=moon&transition=zoom#/inicio">Moon</a>
+            </small>
+        </p>
+        
+        <p><small><a href="./index-print.html?print-pdf"><code>[Imprimir en PDF]</code></a></small></p>
+        
+        <small>Para descargar y personalizar esta presentaci&oacute;n Web Libre: <a href="https://github.com/Vitalinux-DGA-ProgSoftLibre/presentacion-prog-softlibre/archive/master.zip">Presentaci&oacute;n Web [zip]</a></small>
+	</section>
+<!--Segunda diapositiva-->
+    <section id='fragments'>
+        
+    <table style="margin-left: auto; margin-right: auto">
+    <tr style="width: 100%">
+    <td  style="vertical-align: middle; ">
+    <h2 style="vertical-align:middle; margin-top: auto; margin-bottom: auto">Objetivos</h2>    
+    </td>    
+    <td  style="vertical-align:middle; text-aling: center; padding-left: 30px" >
+    <img src="./img/logo.png" height="60">
+    </td>
+    </tr>
+    </table>
+    
+	<p>Objetivos del Programa de Software Libre:</p>
+	<br>
+	<ol>
+	<li class='fragment'>
+	<em><a>Reutilizar</a> equipos antiguos o de bajas prestaciones</em></li>
+	<li class='fragment'><em><a>Alternativa</a> a Windows 7/8 </em>(MS deja de dar soporte a WXP)</li>
+    <li class='fragment'><em>Evitar el <a>"pirateo"</a> de Software privativo</em></li>
+    <li class='fragment'><em>Reducir los costes de <a>licencias de Software</a> </em></li>
+	<li class='fragment'><em>Fomentar el uso del <a>Software Libre en Educaci&oacute;n</a></em></li>
+    <li class='fragment'><em>Poder <a>Inventariar</a> todo el Software y Hardware</em></li>
+    <li class='fragment'><em>Facilitar labores de <a>Gesti&oacute;n de Software</a></em></li>
+	</ol>
+	<aside class='notes'>notas</aside>
+	</section>
+
+   <section>
+    <section data-transition="slide" data-background="#FF4500" data-background-transition="slide">
+        <h3>Infraestructura de la Red - Servicio Migasfree</h3>
+        <img src="./img/logo.png" height="30" style="position: absolute; top: 110px; left: 15%; z-index: 1">
+        <a href="./img/migasfree-esquema-1v2-nq8.png">
+        <img src="./img/migasfree-esquema-1-nq8.png" 
+             style="padding: 20px; background-color: white; width: 70%;">
+        </a>
+    </section>
+    <section data-transition="slide" data-background="#FF4500" data-background-transition="slide">
+        <h3>Infraestructura de la Red - Servicio Migasfree</h3>
+        <img src="./img/logo.png" height="30" style="position: absolute; top: 110px; left: 15%; z-index: 1">
+        <a href="./img/migasfree-esquema-2v2-nq8.png">
+        <img src="./img/migasfree-esquema-2-nq8.png" 
+             style="padding: 20px; background-color: white; width: 70%;">
+        </a>
+    </section>
+    <section data-transition="slide" data-background="#FF4500" data-background-transition="slide">
+        <h3>Infraestructura de la Red - Servicio Migasfree</h3>
+        <img src="./img/logo.png" height="30" style="position: absolute; top: 110px; left: 15%; z-index: 1">
+        <a href="./img/migasfree-esquema-3v2-nq8.png">
+        <img src="./img/migasfree-esquema-3-nq8.png" 
+             style="padding: 20px; background-color: white; width: 70%;">
+        </a>
+    </section>
+       <section data-transition="slide" data-background="#FF4500" data-background-transition="slide">
+        <img src="./img/logo.png" height="30" style="position: absolute; top: 110px; left: 15%; z-index: 1">
+        <h3>Infraestructura de la Red - Servicio Migasfree</h3>
+        <a href="./img/migasfree-esquema-4v2-nq8.png">
+        <img src="./img/migasfree-esquema-4-nq8.png" 
+             style="padding: 20px; background-color: white; width: 70%;">
+        </a>
+    </section>
+  </section>
+
+        <section>
+    <section data-transition="slide" data-background="#4169E1" data-background-transition="slide">
+        <img src="./img/logo.png" height="30" style="position: absolute; top: 535px; left: 116%; z-index: 1">
+        <h3>Infraestructura de la Red - Servicio LDAP&amp;NFS</h3>
+        <img src="./img/logo.png" height="30" style="position: absolute; top: 110px; left: 15%; z-index: 1">
+        <a href="./img/migasfree-esquema-1v2-nq8.png">
+        <img src="./img/migasfree-esquema-1-nq8.png" 
+             style="padding: 20px; background-color: white; width: 70%;">
+        </a>
+    </section>
+    <section data-transition="slide" data-background="#4169E1" data-background-transition="slide">
+        <h3>Infraestructura de la Red - Servicio LDAP&amp;NFS</h3>
+        <img src="./img/logo.png" height="30" style="position: absolute; top: 110px; left: 15%; z-index: 1">
+        <a href="./img/migasfree-esquema-ldap-1-nq8.png">
+        <img src="./img/migasfree-esquema-ldap-1-nq8.png" 
+             style="padding: 20px; background-color: white; width: 75%;">
+        </a>
+    </section>
+    <section data-transition="slide" data-background="#4169E1" data-background-transition="slide">
+        <h3>Infraestructura de la Red - Servicio LDAP&amp;NFS</h3>
+        <img src="./img/logo.png" height="30" style="position: absolute; top: 110px; left: 5%; z-index: 1">
+        <a href="./img/migasfree-esquema-ldap-2-nq8.png">
+        <img src="./img/migasfree-esquema-ldap-2-nq8.png" 
+             style="padding: 20px; background-color: white; width: 90%;">
+        </a>
+    </section>
+       <section data-transition="slide" data-background="#4169E1" data-background-transition="slide">
+        <h3>Infraestructura de la Red - Servicio LDAP&amp;NFS</h3>
+        <img src="./img/logo.png" height="30" style="position: absolute; top: 110px; left: 5%; z-index: 1">
+        <a href="./img/migasfree-esquema-ldap-3-nq8.png">
+        <img src="./img/migasfree-esquema-ldap-3-nq8.png" 
+             style="padding: 20px; background-color: white; width: 90%;">
+        </a>
+    </section>
+  </section>
+        
+<section>
+    <h2>Funcionalidades Añadidas</h2>
+    <p>Resumen de posibilidades ofrecidas por <b><a href="http://www.migasfree.org/">Migasfree+Vitalinux:</a></b> </p>
+    <div style="background-color: skyblue; padding: 30px">
+    <img src="./img/logo.png" height="30" style="position: absolute; top: 170px; left: 81%">
+    <ul>
+    <li class="fragment highlight-current-red"><em>Gesti&oacute;n Sencilla y Vers&aacute;til del Software</em></li>
+    <li class="fragment highlight-current-red"><em>Control Total de los Escritorios de los Alumnos</em></li>
+    <li class="fragment highlight-current-red"><em>Carpetas compartidas Profesor - Alumnos</em></li>
+    <li class="fragment highlight-current-red"><em>Autenticaci&oacute;n Centralizada de Usuarios / Perfil Móvil</em></li>
+    <li class="fragment highlight-current-red"><em>Scripts de Nautilus </em>(plugins del explorador de archivos)</li>
+    <li class="fragment highlight-current-red"><em>Control Autom&aacute;tico del Apagado de los Equipos</em></li>
+    <li class="fragment highlight-current-red"><em>Todo el Software necesario esta en los Repositorios</em></li>
+    <li class="fragment highlight-current-red"><em>La mayor&iacute;a de los Drivers estan disponibles</em></li>
+    <li class="fragment highlight-current-red"><em>Normalizaci&oacute;n de los Equipos</em></li>
+    <li class="fragment highlight-current-red"><em>Posibilidad de Congelaci&oacute;n parcial o total del equipo</em></li>
+    <li class="fragment highlight-current-red"><em>Puede distribuirse el Software de manera libre</em></li>
+    </ul>
+    </div>
+</section>
+        
+<section>
+    <table style="margin-left: auto; margin-right: auto">
+    <tr style="width: 100%">
+    <td  style="vertical-align: middle; ">
+    <h2 style="vertical-align:middle; margin-top: auto; margin-bottom: auto">Consideraciones Finales</h2>    
+    </td>    
+    <td  style="vertical-align:middle; text-aling: center; padding-left: 100px" >
+    <img src="./img/logo.png" height="30">
+    </td>
+    </tr>
+    </table>
+    
+    <div style="background-color: OliveDrab; padding: 30px">
+    
+    <ul>
+    <li class="fragment highlight-current-red"><em>Listado limitado de Centros Piloto</em></li>
+    <li class="fragment highlight-current-red"><em>Soporte: <a href="http://soporte.vitalinux.org/">http://soporte.vitalinux.org/</a></em></li>
+    <li class="fragment highlight-current-red"><em>Wiki: <a href="http://wiki.migasfree.educa.aragon.es">http://wiki.migasfree.educa.aragon.es</a></em></li>
+    <li class="fragment highlight-current-red"><em>Noticias Comunidad Vitalinux: <a href="https://plus.google.com/communities/109242277807385330969">Vitalinux EDU - Community - Google+</a></em></li>
+    </ul>
+    </div>
+    <br>
+    <small>
+    <div style="background-color: SlateBlue; padding: 15px; width: 70%; margin-left: auto; margin-right: auto">
+    <p>Agradecimientos a toda la comunidad Vitalinux, y en especial a:</p>
+    <ul>
+    <li><em><a href="http://wiki.migasfree.educa.aragon.es">Alberto Gacías</a></em></li>
+    <li><em><a href="http://wiki.migasfree.educa.aragon.es">Jos&eacute; Antonio Chavarr&iacute;a</a></em></li>
+    <li><em><a href="http://wiki.migasfree.educa.aragon.es">Eduardo Romero</a></em></li>
+    </ul>
+    </div>
+    </small>
+</section>
+				
+
+			</div>
+
+		</div>
+
+         <script src="js/zoom.js"></script>
+            <script>
+                document.querySelector( '.img1' ).addEventListener( 'click', function( event ) {
+                    event.preventDefault();
+                    zoom.to({ element: event.target });
+                } );
+            </script>
+        
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
