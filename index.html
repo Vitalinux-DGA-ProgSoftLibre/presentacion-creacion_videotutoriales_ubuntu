@@ -105,7 +105,7 @@
     </div>
 	</section>
     
-    <section id='fragments' style='font-family: "Berkshire Swash", "Times New Roman", serif;'>   
+    <section style='font-family: "Berkshire Swash", "Times New Roman", serif;'>   
     <table style="margin-left: auto; margin-right: auto">
     <tr style="width: 100%">
     <td  style="vertical-align: middle; ">
@@ -118,12 +118,12 @@
     </table>
     <br/>
 	<div style="background-color: Chartreuse; padding: 30px">
-    Esta presentaci&oacute;n prentende mostrar a la comunidad Vitalinux una explicaci&oacute;n de como crear videotutoriales, de tal forma que cualquier usuario de la comunidad pueda contribuir en la creaci&oacute;n de videotutoriales explicativos del software que incluye el proyecto Migasfree+Vitalinux.
+    Esta presentaci&oacute;n prentende mostrar a la comunidad Vitalinux como crear videotutoriales, de tal forma que cualquier usuario de la comunidad pueda contribuir en la creaci&oacute;n de videotutoriales explicativos del software que incluye el proyecto Migasfree+Vitalinux.
     </div>
 	</section>
         
 <section>
-    <section id='fragments' style='font-family: "Berkshire Swash", "Times New Roman", serif;'>   
+    <section style='font-family: "Berkshire Swash", "Times New Roman", serif;'>   
     <table style="margin-left: auto; margin-right: auto">
     <tr style="width: 100%">
     <td  style="vertical-align: middle; ">
@@ -136,14 +136,17 @@
     </table>
     <br/>
 	<div data-markdown style="background-color: skyblue; padding: 30px">
-(1) **SimpleScreenRecorder**. Tras probar varios de ellos, de entre todos los programas pensados
-exclusivamente para grabar el escritorio de trabajo, se ha seleccionado este por sus características y
-buenos resultados. No esta disponible en los repositorios por defecto, por lo que es necesario
-agregar un nuevo repositorio:
-
+(1) **SimpleScreenRecorder**. Permite grabar el escritorio de trabajo (muy v&eacute;rsatil y sencillo). No esta disponible en los repositorios por defecto, por lo que es necesario agregar un nuevo repositorio (ppa:maarten-baert o migasfree):
 ```bash
 [usuario@linux]$ sudo add-apt-repository \
-        ppa:maarten-baert/simplescreenrecorder
+        ppa:maarten-baert/simplescreenrecorder (opci&oacute;n A)
+```
+```bash
+[usuario@linux]$ cat /etc/apt/sources.list.d/vx-repos.list
+deb http://81.47.171.61/repo/Ubuntu-12.04-cliente/REPOSITORIES \
+        utiles PKGS (opci&oacute;n B)
+```
+```bash
 [usuario@linux]$ sudo apt-get update
 [usuario@linux]$ sudo apt-get install simplescreenrecorder \
         ubuntu-restricted-extras
@@ -152,7 +155,7 @@ agregar un nuevo repositorio:
     </div>
 	</section>
 
-<section id='fragments' style='font-family: "Berkshire Swash", "Times New Roman", serif;'>   
+<section style='font-family: "Berkshire Swash", "Times New Roman", serif;'>   
     <table style="margin-left: auto; margin-right: auto">
     <tr style="width: 100%">
     <td  style="vertical-align: middle; ">
@@ -165,7 +168,7 @@ agregar un nuevo repositorio:
     </table>
     <br/>
 	<div data-markdown style="background-color: skyblue; padding: 30px">
-(2) **Mplayer**. Me permite mostrar en los videotutoriales una pequeña ventana (sin barras de título,
+(2) **Mplayer**. Permite mostrar en los videotutoriales una pequeña ventana (sin barras de título,
 menús, etc.) con la imagen capturada por la Webcam. De esta forma, al mismo tiempo que se ve
 como realizar la práctica, se me muestra a mí mientras lo explico. Esta disponible en los
 repositorios por defecto.
@@ -173,12 +176,12 @@ repositorios por defecto.
 ```bash
 [usuario@linux]$ sudo apt-get install mplayer
 [usuario@linux]$ mplayer -noborder -quiet -ontop -fps 15 \
-        -geometry 200x150+1110+560
+        -geometry 200x150+1110+560 noaudio tv://
 ```
     </div>
 	</section>        
 
-<section id='fragments' style='font-family: "Berkshire Swash", "Times New Roman", serif;'>   
+<section style='font-family: "Berkshire Swash", "Times New Roman", serif;'>   
     <table style="margin-left: auto; margin-right: auto">
     <tr style="width: 100%">
     <td  style="vertical-align: middle; ">
@@ -191,7 +194,7 @@ repositorios por defecto.
     </table>
     <br/>
 	<div data-markdown style="background-color: skyblue; padding: 30px">
-(3) **OpenShot**. Me permite editar los vídeos resultantes. Es decir, dispone de varias pistas o capas,
+(3) **OpenShot**. Permite editar los vídeos resultantes. Es decir, dispone de varias pistas o capas,
 en las cuales pudemos ir añadiendo vídeos, música o imágenes que irán componiendo el vídeo
 resultante. Esta disponible en los repositorios por defecto.
 
